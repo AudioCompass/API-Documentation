@@ -3,7 +3,7 @@ API-Documentation
 
 Developer documentation for AudioCompass's API. All endpoints are appended to **http://api.audiocompass.in**
 
-###Exchanging your username and password for an access token
+###Step 1: Exchanging your username and password for an access token
 
 ####Endpoint
 
@@ -21,8 +21,9 @@ Developer documentation for AudioCompass's API. All endpoints are appended to **
     access_token: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJhY2ciLCJpYXQiOiIxNDEyMDc5MjYwIiwicm9sZSI6ImFkbWluIiwic3ViIjoNTQxZWQ1ODFh0TY4MmExNzBiNmU1NThiIiwiYWxpYXMiOiJhZG1pbiIsImFnZW50X25hbWUiOiJhZG1pbiJ9.xKLGsEucHwNB20euE4H2nOApdPEjz-Wm8Cyufw1Cetw"
 }
 ```
+**_Tip_**:This access_token is valid for 30 days and can be cached by your application.
 
-###Creating a trip
+###Step 2: Creating a trip
 
 ####Endpoint
 
@@ -34,9 +35,9 @@ Developer documentation for AudioCompass's API. All endpoints are appended to **
 
 **fname** Required: The First name of the main passenger.
 
-**lname** Required: The First name of the main passenger.
+**lname** Required: The Last name of the main passenger.
 
-**email** Required: The email of the mail passenger.
+**email** Required: The email of the main passenger.
 
 **mobile** Required: The 10 digit mobile number of the main passenger
 
@@ -101,9 +102,3 @@ Developer documentation for AudioCompass's API. All endpoints are appended to **
   message: "Booking Id already exists."
 }
 ```
-
-
-
-
-
-
